@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+/*Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+/*Staatliches*/
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* make images easier to work with */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --dark: hsl(15, 40%, 6%);
+  --gray: hsl(0, 0%, 91%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--gray);
+  font-family: "Open Sans";
+}
+
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 80%;
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+
+h1 {
+  color: rgb(250, 89, 89);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.facebook {
+  color: blue;
+}
+
+.twitter {
+  color: rgb(77, 185, 204);
+}
+
+.vimeo {
+  color: rgb(241, 66, 241);
+}
+
+.form-wrapper {
+  display: grid;
+  background-color: white;
+  padding: 1rem 2rem;
+  border: red solid 1px;
+}
+
+.form {
+
 }
