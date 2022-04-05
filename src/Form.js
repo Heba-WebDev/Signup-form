@@ -38,7 +38,7 @@ return (
    </div>
 
 
-   <h2>Or use your email for registration:</h2>
+   <small>Or use your email for registration:</small>
    
 
    <form className="form">
@@ -69,6 +69,7 @@ return (
   name="password"
   value={formData.password}
   onChange={handleChange}
+  className='password'
   />
 <br/>
 
@@ -81,7 +82,11 @@ return (
   checked={formData.doesAgree}
   onChange={handleChange}
   />
-<label htmlFor="doesAgree">I agree to the Terms and Privacy Policy.</label>
+<label htmlFor="doesAgree">I agree to the <span>Terms</span> and <span>Privacy Policy</span>.</label>
+
+<br></br>
+<button className="signin">Signin</button>
+<button className="signup">Signup</button>
    </form>
    </div>
     

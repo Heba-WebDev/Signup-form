@@ -7,10 +7,8 @@ import React from "react";
 function App() {
   return (
     <div className="app">
-      
-  
 
-     {/* <img src={img} className='form-img'/> */}
+      <img src={img} className='form-img'/> 
      <Form />
 
 
